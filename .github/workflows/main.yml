@@ -6,7 +6,7 @@ on:
 
 jobs:
   test:
-    name: Test and report
+    name: Test with pnpm
     runs-on: ubuntu-latest
     # strategy:
     #   matrix:
