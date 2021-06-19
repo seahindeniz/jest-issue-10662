@@ -7,7 +7,7 @@ const config: Config.InitialOptions = {
   transform: { '^.+\\.tsx?$': 'ts-jest' },
   // https://regex101.com/r/tiSozd/1
   testRegex: '\\.(test|spec)\\.tsx?$',
-  testEnvironment: 'jsdom',
+  testEnvironment: 'node',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
 };
 
