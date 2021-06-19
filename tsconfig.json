@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitAny": true,
+    "outDir": "dist/",
+    "target": "es5"
+  },
+  "include": ["./src", "jest.config.ts"]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "jest-issue-x",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles --forceExit --verbose"
+  },
+  "keywords": [],
+  "author": "Sahin Deniz",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "jest": "^27.0.4",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.0.0"
+  },
+  "dependencies": {
+    "typescript": "^4.3.4"
+  }
+}
