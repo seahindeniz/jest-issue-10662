@@ -1,0 +1,30 @@
+name: Test with yarn
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  test:
+    name: Test with yarn
+    runs-on: ubuntu-latest
+    # strategy:
+    #   matrix:
+    #     node-version: [12.22.0, 12.x, 14.x, 16.x]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # - name: Setup NodeJS ${{ matrix.node-version }}
+      - name: Setup NodeJS 16
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 16
+          # node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Run test
+        run: yarn test
